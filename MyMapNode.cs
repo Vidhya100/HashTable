@@ -34,7 +34,7 @@ namespace HashDemo
             LinkedList<KeyValue<K, V>> linkedList = GetLinkedlist(position);
             KeyValue<K, V> item = new KeyValue<K, V>() { key = key, value = value };
             linkedList.AddLast(item);
-            Console.WriteLine(item.key + " " + item.value);
+           
         }
         public int GetArrayPosition(K key)
         {

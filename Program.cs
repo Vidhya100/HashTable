@@ -11,7 +11,7 @@ namespace HashDemo
             //it doesn't take duplicate value
             //need key and value pair
 
-            string paragraph = "To be or not to be";
+            string paragraph = "Paranoids are no paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
             string[] para = paragraph.Split();
             MyMapNode<int, string> hashMap = new MyMapNode<int, string>(para.Length);
             int count = 0;
