@@ -51,7 +51,38 @@ namespace HashDemo
             }
             return linkedList;
         }
-
+        public void Remove(K key)
+        {
+            int position = GetArrayPosition(key);
+            LinkedList<KeyValue<K, V>> linkedList = GetLinkedlist(position);
+            bool itemFound = false;
+            KeyValue<K, V> foundItem = default(KeyValue<K, V>);
+            foreach (KeyValue<K, V> item in linkedList)
+            {
+                if (item.key.Equals(key))
+                {
+                    itemFound = true;
+                    foundItem = item;
+                }
+            }
+            if (itemFound)
+            {
+                linkedList.Remove(foundItem);
+            }
+        }
+        public void Display()
+        {
+            foreach (var linkedList in item)
+            {
+                if (linkedList != null)
+                    foreach (var element in linkedList)
+                    {
+                        string result = element.ToString();
+                        if (result != null)
+                            Console.WriteLine(element.key + " " + element.value);
+                    }
+            }
+        }
 
     }
     public struct KeyValue<K, V>

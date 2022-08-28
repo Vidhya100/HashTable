@@ -22,6 +22,16 @@ namespace HashDemo
             }
             Frequency.FindFrequency(para);
 
+            Console.WriteLine("==================");
+            Console.WriteLine("Before Remove:");
+            hashMap.Display();
+            hashMap.Remove(5);
+            Console.WriteLine("==================");
+            Console.WriteLine("After remove: ");
+            hashMap.Display();
+
+
+
         }
     }
 }
